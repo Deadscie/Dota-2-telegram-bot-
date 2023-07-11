@@ -1,5 +1,5 @@
-from services.parse_liquipedia import parse,matches
-from services.converter import actualy_matches,convert_mathes
+#from services.parser_liquipedia.parse_liquipedia import parse,matches
+#from services.converter import actualy_matches,convert_mathes
 def all_matches_message():
     all_mathes = ''
     parse()

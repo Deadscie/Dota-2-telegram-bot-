@@ -3,7 +3,7 @@ from datetime import datetime
 month_dict = {1:'January',2: 'February',3:'March',4:'April',5:'May',
         6:'June',7:'July',8:'August',9:'September',10:'October',
         11:'November',12:'December'}
-from services.parse_liquipedia import matches
+#from services.parser_liquipedia.parse_liquipedia import matches
 actualy_matches = {'бла бла': 'July 10, 2023 - 2:12 UTC'}
 def convert_mathes():
     global actualy_matches
@@ -94,9 +94,3 @@ class Convert_time_matches():
         if Convert_time_matches.is_hour_over_24_for_day(match):
             dat +=1
         return day
-
-for i in matches.items():
-    print(Convert_time_matches.str_time(i[1])+'.'+str(Convert_time_matches.day(i[1])))
-    print(Convert_time_matches.int_time(i[1]))
-print(datetime.now().date())
-print(datetime.now().time())
